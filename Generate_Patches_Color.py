@@ -4,7 +4,7 @@ from glob import glob
 from PIL import Image
 import PIL
 import random
-import utils1
+# import utils1
 from utils import *
 from past.builtins import xrange
 import numpy as np
@@ -24,7 +24,7 @@ args = parser.parse_args()
 def generate_patches(isDebug=False):
     global DATA_AUG_TIMES
     count = 0
-    filepaths = glob(args.src_dir + '/*.jpg')
+    filepaths = glob(args.src_dir + '/*.tif')
     print('number of training data %d' %(len(filepaths)))
     
     scales=[1,0.8,0.6]

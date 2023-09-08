@@ -17,7 +17,7 @@ genDataPath='./BSD400/'
 save_dir='./trainingPatch/'
 
 #path to training data
-data='./trainingPatch/img_clean_pats.npy'
+data='./trainingPatch/clean_pats_rgb.npy'
 
 #variables required to generate patch
 pat_size=30

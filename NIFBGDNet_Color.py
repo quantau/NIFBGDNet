@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # import packages
 import os
-import myConfig as config
+from conf import myConfig as config
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras import optimizers
 from tensorflow.keras.layers import Conv2D,Activation,Input,Add,Subtract,Concatenate,Conv2DTranspose,AveragePooling2D,Multiply
@@ -12,8 +12,8 @@ import numpy as np
 import random
 import tensorflow as tf
 from utils import *
-os.environ["CUDA_VISIBLE_DEVICES"]="7"
-tf_device='/gpu:7'
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
+tf_device='/gpu:0'
 
 # create CNN model
 input_img=Input(shape=(None,None,3))
